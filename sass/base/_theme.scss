@@ -1,26 +1,29 @@
 .container {
   background-color: none;
 }
-#hero {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-attachment: scroll;
-  background-clip: border-box;
-  background-color: #323232;
-  background-image: url("/images/heroBack.jpg");
-  background-origin: padding-box;
-  background-position: 0 0;
-  background-repeat: repeat;
-  background-size: auto auto;
-  margin: 0px;
-  padding: 75px;
-  z-index: -1;
-  height: 550px;
+#hero{
+position:fixed;
+top:10px;
+width:100%;
+background-attachment:scroll;
+background-clip:border-box;
+background-color:#363636;
+background-image:url("/images/paper.png");
+background-origin:padding-box;
+background-position:top center;
+background-repeat:no-repeat;
+background-size:auto auto;
+margin:auto;
+padding:auto;
+z-index:-1;
+height:550px
 }
-#hero-inner {
-  font-family: 'Cantarell', sans-serif;
-  margin-top: 50px;
+#hero-inner{
+text-align:center;
+padding:auto;
+font-family: "Courier New", monospace;
+margin-top:260px;
+color:#FAFAFA
 }
 #hero-inner h1 {
   font-size: 60px;
