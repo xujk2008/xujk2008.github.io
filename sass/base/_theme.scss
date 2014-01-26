@@ -143,6 +143,19 @@ article h1 {
   display: inline;
   opacity: .7;
   margin: 0px 0px 0px 1px;
+
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.social_icon:hover{
+  -webkit-transform: rotate(18deg);
+  -moz-transform: rotate(18deg);
+  -o-transform: rotate(18deg);
+  -ms-transform: rotate(18deg);
+  transform: rotate(18deg);
 }
 dt .social_icon {
   margin-left: 5px;
