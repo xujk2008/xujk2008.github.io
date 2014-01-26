@@ -7,7 +7,7 @@ title: I'm Kite Xu
 subtitle: if you like this blog. Otherwise I'm not.
 author: Kite Xu
 simple_search: http://google.com/search
-description:
+description: 
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
@@ -74,6 +74,10 @@ twitter_tweet_button: true
 
 # Weibo    
 weibo_user: kitexu
+weibo_uid: 1736224785
+
+# Douban
+douban_user: kitexu
 
 # Google +1
 google_plus_one: false
@@ -101,3 +105,9 @@ google_analytics_tracking_id:
 
 # Facebook Like
 facebook_like: false
+
+#Instagram
+instagram_user: xujk2008
+instagram_uid: 781243147
+instagram_client: ef1a334c39ec4aef8ac0dfa872678cac
+instagram_access_token: 781243147.ef1a334.b511cb7ff6c54d91bc2c0bf8a8fc5f93

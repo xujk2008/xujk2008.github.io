@@ -1,7 +1,7 @@
 .container {
   background-color: none;
 }
-#hero{
+#paper{
 position:fixed;
 top:10px;
 width:100%;
@@ -18,17 +18,17 @@ padding:auto;
 z-index:-1;
 height:550px
 }
-#hero-inner{
+#paper-inner{
 text-align:center;
 padding:auto;
 font-family: "Courier New", monospace;
 margin-top:260px;
 color:#FAFAFA
 }
-#hero-inner h1 {
+#paper-inner h1 {
   font-size: 60px;
 }
-#hero-inner em {
+#paper-inner em {
   font-style: normal;
   color: #99CDE3;
   text-shadow: -1px -1px 2px #FAFAFA, 1px 1px 2px #070707;
@@ -82,8 +82,8 @@ article h1 {
   border-bottom-width: 1px;
 }
 .wrapper_single {
-  background-color: #F1F1F1;
-  background-image: url("/images/heroBack.jpg");
+  background-color: #363636;
+  background-image: url("/images/paper.png");
   background-attachment: fixed;
   padding-top: 75px;
   padding-bottom: 75px;
@@ -123,7 +123,7 @@ article h1 {
   color: gray;
   font-size: 10px;
 }
-#sub-hero {
+#sub-paper {
   background-attachment: scroll;
   background-clip: border-box;
   background-color: #FFFFFF;

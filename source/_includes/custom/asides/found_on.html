@@ -1,6 +1,6 @@
 <h2>found on</h2>
 {% if site.github_user %}
-<a href="https://github.com/{{site.github_user}}/" rel="tooltip" title="Github" target="_blank"><img class="social_icon" title="Github" alt="github icon" src="{{ root_url }}/images/github.png"></a>
+<a href="https://github.com/{{site.github_user}}/" rel="tooltip" title="Github" target="_blank"><img class="social_icon" alt="github icon" src="{{ root_url }}/images/github.png"></a>
 {% endif %}
 
 {% if site.stackoverflow_user %}
@@ -12,7 +12,7 @@
 {% endif %}
 
 {% if site.weibo_user %}
-<a href="http://weibo.com/{{site.twitter_user}}" rel="tooltip" title="Weibo" target="_blank"><img class="social_icon" title="Weibo" alt="Weibo icon" src="{{ root_url }}/images/weibo.png"></a>
+<a href="http://weibo.com/{{site.twitter_user}}" rel="tooltip" title="Weibo" target="_blank"><img class="social_icon" alt="Weibo icon" src="{{ root_url }}/images/weibo.png"></a>
 {% endif %}
 
 {% if site.googleplus_user %}
@@ -24,6 +24,9 @@
 {% endif %}
 
 {% if site.email %}
-<h2>contact at</h2>
-<a href="mailto:{{ site.email }}">{{ site.email }}</a>
+<a href="mailto:{{ site.email }}/" rel="tooltip" title="E-mail" target="_blank"><img class="social_icon" alt="e-mail icon" src="{{ root_url }}/images/e-mail.png"></a>
+{% endif %}
+
+{% if site.instagram_user %}
+<a href="http://instagram.com/{{site.instagram_user}}/" rel="tooltip" title="Instagram" target="_blank"><img class="social_icon" alt="github icon" src="{{ root_url }}/images/instagram.png"></a>
 {% endif %}

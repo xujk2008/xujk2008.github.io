@@ -3,12 +3,20 @@ layout: default
 ---
 
 <div id="front-wrapper">
-  <div id="hero">
-    <div id="hero-inner" class="container">
+  <div id="arrow" style="height: 100px;">
+    <img rel="tooltip" title="scroll down" alt="scroll down" src="{{ root_url }}/images/arrow.png" >
+  </div>
+  <nav id="navigation">
+    <div id="navigation-inner" class="container">
+      {% include navigation.html %}
+    </div>
+  </nav>
+  <div id="paper">
+    <div id="paper-inner" class="container">
       {% include custom/intro.html %}
     </div>
   </div>
-  <section id="sub-hero">
+  <section id="sub-paper">
     <div class="container">
       {% include custom/widgets.html %}
     </div>
