@@ -44,37 +44,79 @@
 </head>
 
 <body   >
-  <div id="front-wrapper">
-  <div id="arrow" style="height: 100px;">
-    <img rel="tooltip" title="scroll down" alt="scroll down" src="/images/arrow.png" >
-  </div>
-  <nav id="navigation">
-    <div id="navigation-inner" class="container">
-      <div class="navbar">
-  <div class="navbar-inner">
-    <a class="brand" href="/">I&#8217;m Kite Xu</a>
-    <ul class="nav">
-      <li><a href="/">Home</a></li>
-      <li><a href="/blog/archives">Archives</a></li>
-    </ul>
-    <ul class="nav" data-subscription="rss">
-      <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
-      
-    </ul>
-      
-    <form class="navbar-form" action="http://google.com/search" method="get">
-      <fieldset role="search">
-        <input type="hidden" name="q" value="site:xujk2008.github.io" />
-        <input class="span2" type="text" name="q" results="0" placeholder="Search"/>
-      </fieldset>
-    </form>
-      
-    
-  </div>
-</div>
+  <script>
+document.documentElement.style.overflow = 'hidden';  // firefox, chrome
+    document.body.scroll = "no"; // ie only
+  function reloadScrollBars() {
+    document.documentElement.style.overflow = 'auto';  // firefox, chrome
+    document.body.scroll = "yes"; // ie only
+};
+</script>
+<script src="/javascripts/scroll.js"></script>
 
+<div id="front-wrapper">
+  <div id="arrow" style="height: 140px;">
+    <img rel="tooltip" title="scroll down" alt="scroll down" src="/images/arrow.png" onclick="scrollWin();reloadScrollBars();">
+  </div>
+  <div id="navigation">
+    <div id="navigation-inner">
+      <style>
+.custom-navbar-inner{
+  width: 100%;
+  float: left;
+  margin: 0 0 1em 0;
+  padding: 0;
+  background-color: #363636;
+  border-bottom: 1px solid #ccc;  
+}
+.custom-navbar-inner ul{
+  margin:0;
+  padding:0;
+  overflow:hidden; 
+}
+.custom-navbar-inner li{
+  float: left; 
+}
+.custom-navbar-inner li a:link, a:visited{
+  display: block;
+  height:40px;
+  width:120px;
+  font-weight:bold;
+  color:#FFFFFF;
+  text-align:center;
+  padding:10px;
+  text-decoration:none;
+}
+.custom-navbar-inner li a:hover{
+  color: #FAFAFA;
+  background-color: #525252;
+  text-shadow: rgb(49, 49, 49) 1px 1px,
+    rgb(51, 51, 51) 2px 2px,
+    rgb(54, 54, 54) 3px 3px;
+}
+.custom-navbar-inner li:first-child a{
+  display: block;
+  height:40px;
+  width:40px;
+  padding:10px;
+  margin-left:20px;
+}
+.custom-navbar-inner li:first-child a:hover{
+  background-color: #363636;
+}
+</style>
+
+<div class="custom-navbar">
+    <div class="custom-navbar-inner">    
+      <ul>
+        <li><a href="/"><img src="images/paper-32.png"></a></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="/blog/archives">Archives</a></li>
+      </ul>
     </div>
-  </nav>
+</div>
+    </div>
+  </div>
   <div id="paper">
     <div id="paper-inner" class="container">
       <div>
