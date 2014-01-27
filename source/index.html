@@ -1,16 +1,25 @@
 ---
 layout: default
 ---
+<script>
+document.documentElement.style.overflow = 'hidden';  // firefox, chrome
+    document.body.scroll = "no"; // ie only
+  function reloadScrollBars() {
+    document.documentElement.style.overflow = 'auto';  // firefox, chrome
+    document.body.scroll = "yes"; // ie only
+};
+</script>
+<script src="{{ root_url }}/javascripts/scroll.js"></script>
 
 <div id="front-wrapper">
-  <div id="arrow" style="height: 100px;">
-    <img rel="tooltip" title="scroll down" alt="scroll down" src="{{ root_url }}/images/arrow.png" >
+  <div id="arrow" style="height: 140px;">
+    <img rel="tooltip" title="scroll down" alt="scroll down" src="{{ root_url }}/images/arrow.png" onclick="scrollWin();reloadScrollBars();">
   </div>
-  <nav id="navigation">
-    <div id="navigation-inner" class="container">
-      {% include navigation.html %}
+  <div id="navigation">
+    <div id="navigation-inner">
+      {% include custom/navigation.html %}
     </div>
-  </nav>
+  </div>
   <div id="paper">
     <div id="paper-inner" class="container">
       {% include custom/intro.html %}
