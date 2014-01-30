@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[ | I'm Kite Xu]]></title>
+  <link href="http://xujk2008.github.io/" rel="self"/>
+  <link href="http://xujk2008.github.io/"/>
+  <updated>2014-01-30T19:59:55+08:00</updated>
+  <id>http://xujk2008.github.io/</id>
+  <author>
+    <name><![CDATA[Kite Xu]]></name>
+    <email><![CDATA[xujk2008@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+</feed>

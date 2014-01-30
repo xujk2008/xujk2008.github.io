@@ -1,0 +1,55 @@
+<style>
+.custom-navbar-inner{
+  width: 100%;
+  float: left;
+  margin: 0 0 1em 0;
+  padding: 0;
+  background-color: #363636;
+  border-bottom: 1px solid #ccc;  
+}
+.custom-navbar-inner ul{
+  margin:0;
+  padding:0;
+  overflow:hidden; 
+}
+.custom-navbar-inner li{
+  float: left; 
+}
+.custom-navbar-inner li a:link, a:visited{
+  display: block;
+  height:40px;
+  width:120px;
+  font-weight:bold;
+  color:#FFFFFF;
+  text-align:center;
+  padding:10px;
+  text-decoration:none;
+}
+.custom-navbar-inner li a:hover{
+  color: #FAFAFA;
+  background-color: #525252;
+  text-shadow: rgb(49, 49, 49) 1px 1px,
+    rgb(51, 51, 51) 2px 2px,
+    rgb(54, 54, 54) 3px 3px;
+}
+.custom-navbar-inner li:first-child a{
+  display: block;
+  height:40px;
+  width:40px;
+  padding:10px;
+  margin-left:20px;
+}
+.custom-navbar-inner li:first-child a:hover{
+  background-color: #363636;
+}
+</style>
+
+<div class="custom-navbar">
+    <div class="custom-navbar-inner">    
+      <ul>
+        <li><a href="{{ root_url }}/"><img src="images/paper-32.png"></a></li>
+        <li><a href="{{ root_url }}/">Home</a></li>
+        <li><a href="{{ root_url }}/blog/archives">Archives</a></li>
+      </ul>
+    </div>
+</div>
