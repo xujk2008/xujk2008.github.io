@@ -1,0 +1,133 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"> 
+<html> 
+    <head> 
+        <meta http-equiv="Content-Type" content="text/html; charsetGB2312" /> 
+        <title>致红领巾的一封信</title> 
+         
+    </head> 
+    <body onclick="showPic();" bgcolor="#E66C69"> 
+	<div align="center" id="picDiv">
+		<img src="test-1.png" id="picture"/>
+		<img src="girl.png" id="below" style="display: none;"/>
+	</div>
+    </body> 
+</html> 
+
+<script type="text/javascript">
+
+
+	var image = new Array(27);
+	
+	image[0]= "images/test-1.png";
+	
+	image[1]= "images/test-2.png";
+
+	image[2]= "images/test-3.png";	
+	image[3]= "images/test-4.png";
+	
+	image[4]= "images/test-5.png";
+
+	image[5]= "images/test-6.png";
+	image[6]= "images/test-7.png";
+	
+	image[7]= "images/test-8.png";
+
+	image[8]= "images/test-9.png";	
+	image[9]= "images/test-10.png";
+	
+	image[10]= "images/test-11.png";
+
+	image[11]= "images/test-12.png";	
+	image[12]= "images/test-13.png";
+	
+	image[13]= "images/test-14.png";
+
+	image[14]= "images/test-15.png";	
+	image[15]= "images/test-16.png";
+	
+	image[16]= "images/test-17.png";
+
+	image[17]= "images/test-18.png";
+	image[18]= "images/test-19.png";
+	
+	image[19]= "images/test-20.png";
+
+	image[20]= "images/test-21.png";	
+	image[21]= "images/test-22.png";
+	
+	image[22]= "images/test-23.png";
+
+	image[23]= "images/test-24.png";
+	image[24]= "images/test-25.png";
+
+	image[25]= "images/test-26.png";
+	image[26]= "images/test-27.png";		
+
+	function showPic() {
+		
+		var pic = document.getElementById("picture");
+
+		var below = document.getElementById("below");
+		var source = pic.getAttribute("src");
+
+	
+		for(var i=0;i<image.length;i++){
+			
+			if(source == image[i]){
+
+				if(i==image.length-1)
+				{
+					source=image[0];
+
+				}
+				else
+				{				
+					source=image[i+1];
+				}
+				
+				
+				pic.setAttribute("src", source);
+
+
+				switch(i)
+				{
+				case 0:
+					below.setAttribute("src","images/girl.png");
+
+					below.style.display = "block";
+					break;
+				case 1:
+					below.setAttribute("src","images/girl-right.png");
+
+					below.style.display = "block";
+					break;
+				case 3:
+					below.setAttribute("src","images/bear_user.png");
+
+					below.style.display = "block";
+					break;
+				case 22:
+					below.setAttribute("src","images/Sunflower-icon.png");
+
+					below.style.display = "block";
+					break;
+				case 25:
+					below.setAttribute("src","replay.png");
+
+					below.style.display = "block";
+					break;
+				default:
+					below.style.display = "none";		
+				}			
+				break;
+			
+				
+			}
+		
+		}
+
+	
+	}
+
+
+</script>
