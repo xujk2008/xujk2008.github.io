@@ -1,0 +1,148 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"> 
+<html> 
+    <head> 
+        <meta http-equiv="Content-Type" content="text/html; charsetGB2312" /> 
+        <title>This is something about me</title> 
+         
+    </head> 
+    <body onclick="showPic();" bgcolor="#E66C69"> 
+	<div align="center" id="picDiv">
+		<img src="images/1.png" id="picture"/>
+		<img src="images/girl.png" id="below" style="display: none;"/>
+	</div>
+    </body> 
+</html> 
+
+<script type="text/javascript">
+
+
+	var image = new Array(23);
+	
+	image[0]= "images/1.png";
+	
+	image[1]= "images/2.png";
+
+	image[2]= "images/3.png";	
+	image[3]= "images/4.png";
+	
+	image[4]= "images/5.png";
+
+	image[5]= "images/6.png";
+	image[6]= "images/7.png";
+	
+	image[7]= "images/8.png";
+
+	image[8]= "images/9.png";	
+	image[9]= "images/10.png";
+	
+	image[10]= "images/11.png";
+
+	image[11]= "images/12.png";	
+	image[12]= "images/13.png";
+	
+	image[13]= "images/14.png";
+
+	image[14]= "images/15.png";	
+	image[15]= "images/16.png";
+	
+	image[16]= "images/17.png";
+
+	image[17]= "images/18.png";
+	image[18]= "images/19.png";
+	
+	image[19]= "images/20.png";
+
+	image[20]= "images/21.png";	
+	image[21]= "images/22.png";
+	
+	image[22]= "images/23.png";
+		
+
+	function showPic() {
+		
+		var pic = document.getElementById("picture");
+
+		var below = document.getElementById("below");
+		var source = pic.getAttribute("src");
+
+	
+		for(var i=0;i<image.length;i++){
+			
+			if(source == image[i]){
+
+				if(i==image.length-1)
+				{
+					source=image[0];
+
+				}
+				else
+				{				
+					source=image[i+1];
+				}
+				
+				
+				pic.setAttribute("src", source);
+
+
+				switch(i)
+				{
+				case 4:
+					below.setAttribute("src","images/normal.jpg");
+
+					below.style.display = "block";
+					break;
+				case 5:
+					below.setAttribute("src","images/abnormal.jpg");
+
+					below.style.display = "block";
+					break;
+				case 6:
+					below.setAttribute("src","images/bike-1.jpg");
+
+					below.style.display = "block";
+					break;
+				case 7:
+					below.setAttribute("src","images/bike-2.jpg");
+
+					below.style.display = "block";
+					break;
+				case 8:
+					below.setAttribute("src","images/bike-3.jpg");
+
+					below.style.display = "block";
+					break;
+				case 9:
+					below.setAttribute("src","images/bike-abnormal.png");
+
+					below.style.display = "block";
+					break;
+				case 10:
+					below.setAttribute("src","images/stone.jpg");
+
+					below.style.display = "block";
+					break;
+				case 20:
+					below.setAttribute("src","images/wechat.jpg");
+
+					below.style.display = "block";
+					break;
+				case 21:
+					below.setAttribute("src","images/replay.png");
+
+					below.style.display = "block";
+					break;
+				default:
+					below.style.display = "none";		
+				}			
+				break;
+			
+				
+			}
+		
+		}
+
+	
+	}
+
+
+</script>
